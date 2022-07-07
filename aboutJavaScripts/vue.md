@@ -61,3 +61,20 @@ vue create project-name
     app.mount('#app')   
 </script>
 ```
+
+#### 组件传值
+* 引用组件
+```vue
+<hello-world :testname="testvalue"></hello-world>
+```
+* 被引用组件
+```js
+<template><p> {{testname }}</p></template>
+<scripts>
+  export default {
+    name: 'App',
+    props: {
+      testname: String
+    },
+</scripts>
+```
