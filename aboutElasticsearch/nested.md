@@ -74,6 +74,7 @@
 ```
 
 #### nested sort
+排序: inner_hits 排序只是doc内部的排序，所以需要在外层再次排序才能得到理想的结果
 ```json
 "sort": {
     "searchResult.ogResult": {
@@ -87,5 +88,4 @@
     }
 }
 ```
-
 
